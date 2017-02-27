@@ -1,0 +1,18 @@
+ <ion-view title="Master List">
+    <ion-content>
+
+      <ion-list>
+          <ion-item can-swipe="true" ng-repeat="user in tableCtrl.users" href="#/details/{{user.id}}"  <!--idemo na detail view-->> 
+		  
+            {{user.firstName}}
+            {{user.lastName}}
+            <ion-option-button class="button-light icon ion-heart"
+            ng-click="tableCtrl.swipe(user.firstName, user.lastName)"
+            ></ion-option-button>
+          </ion-item>
+      </ion-list>
+
+
+    </ion-content>
+
+    </ion-view>

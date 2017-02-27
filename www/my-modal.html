@@ -1,0 +1,33 @@
+<div id="my-modal.html" type="text/ng-template">
+	<ion-modal-view>
+		<ion-header-bar>
+			<h1 class="title">My Modal title</h1>
+
+
+			<button class="button icon ion-close"
+			ng-click="closeModal()"
+			></button>
+
+
+		</ion-header-bar>
+		<ion-content>
+
+			<div class="list">
+				<label class="item item-input">
+					<span class="input-label">Username</span>
+					<input type="text" ng-model="firstName">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Password</span>
+					<input type="password" ng-model="lastName">
+				</label>
+				<button 
+				ng-click = "tableCtrl.append(firstName,lastName)"
+				class="button button-full button-positive">
+  					Full Width Block Button
+				</button>
+			</div>
+
+		</ion-content>
+	</ion-modal-view>
+</div>

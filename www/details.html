@@ -1,0 +1,19 @@
+<ion-view title="Master List">
+  <ion-content>
+    <div class="list">
+				<label class="item item-input">
+					<input type="text" ng-model="first" placeholder="First Name">
+				</label>
+				<label class="item item-input">
+					
+					<input type="password" ng-model="last" placeholder="Last Name">
+				</label>
+				<button  <!--pokrecemo update funkciju iz detailcontrollera koji smo zadali configom-->
+				ng-click = "update(first,last)"
+				class="button button-full button-positive">
+  					Update User Info
+				</button>
+			</div>
+			<a href="#/master" class="button button-positive">Return</a> <!--vracamo se na glavni view-->
+  </ion-content>
+</ion-view>
